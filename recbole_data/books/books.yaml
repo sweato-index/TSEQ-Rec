@@ -1,0 +1,39 @@
+ITEM_ID_FIELD: item_id
+ITEM_LIST_LENGTH_FIELD: history
+PRICE_FIELD: price
+RATING_FIELD: rating
+TIME_FIELD: timestamp
+USER_ID_FIELD: user_id
+average_rating_field: average_rating
+features_field: features
+field_separator: "\t"
+history_field: history
+load_col:
+  inter:
+  - user_id
+  - item_id
+  - rating
+  - timestamp
+  - history
+  - review
+  item:
+  - item_id
+  - title
+  - average_rating
+  - rating_number
+  - features
+  - price
+numerical_features:
+- rating
+- timestamp
+- average_rating
+- rating_number
+- price
+price_field: price
+rating_number_field: rating_number
+review_field: review
+title_field: title
+token_features:
+- history
+- review
+- features
